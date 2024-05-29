@@ -14,7 +14,8 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
 class ContactSerializer(serializers.HyperlinkedModelSerializer):
     '''serializador do model Contact'''
     class Meta:
-        model = Category
+        model = Contact
         fields = [
-            'id', 'url', 'first_name', 'last_name', 'phone', 'email', 'description', 'show', 'picture', 'category'
+            'id', 'url', 'first_name', 'last_name', 'phone', 'email',
+            'description', 'show', 'picture', 'category'
         ]
