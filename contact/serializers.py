@@ -1,14 +1,6 @@
 from rest_framework import serializers
 
-from .models import Category, Contact
-
-
-class CategorySerializer(serializers.HyperlinkedModelSerializer):
-    '''serializador da do model Category'''
-
-    class Meta:
-        model = Category
-        fields = ['id', 'url', 'name',]
+from .models import Contact
 
 
 class ContactSerializer(serializers.HyperlinkedModelSerializer):

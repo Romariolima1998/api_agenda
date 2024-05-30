@@ -1,13 +1,8 @@
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-from .models import Category, Contact
-from .serializers import CategorySerializer, ContactSerializer
-
-
-class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Category.objects.all()
-    serializer_class = CategorySerializer
+from .models import Contact
+from .serializers import ContactSerializer
 
 
 class ContactViewSet(viewsets.ModelViewSet):
